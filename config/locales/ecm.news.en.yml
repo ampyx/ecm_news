@@ -7,7 +7,7 @@ en:
   ecm:
     news:
       active_admin:
-        menu: news
+        menu: News
       item:
         actions:
           all: show all

@@ -8,6 +8,10 @@ gemspec
 # jquery-rails is used by the dummy application
 gem "jquery-rails"
 
+gem "acts_as_markup", :github => 'zegal-cn/acts_as_markup'
+gem "acts_as_published", :path => '/home/sten/acts_as_published'
+gem 'protected_attributes'
+
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or
 # Git. Remember to move these dependencies to your gemspec before releasing
@@ -22,7 +26,6 @@ gem 'guard-rails',  :git => 'git://github.com/robotex82/guard-rails.git', :branc
 # Edge active admin
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
-# gem 'acts_as_published', :path => '/home/robo/rails/modules/acts_as_published-master'
 
 unless ENV['TRAVIS_RUBY_VERSION'].nil?
   gem 'pg'

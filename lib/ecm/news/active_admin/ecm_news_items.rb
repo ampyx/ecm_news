@@ -1,11 +1,13 @@
 include ActsAsPublished::ActiveAdminHelper
 
 ::ActiveAdmin.register Ecm::News::Item do
+  controller.skip_authorization_check
+
   # acts as published
   acts_as_published_actions
 
   # menu entry settings
-  menu :parent => Proc.new { I18n.t('ecm.news.active_admin.menu') }.call
+  menu :parent => 'News'
 
   # scopes
   scope :all

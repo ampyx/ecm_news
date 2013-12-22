@@ -1,4 +1,6 @@
 class Ecm::News::ItemsController < ApplicationController
+  skip_authorization_check
+
   def index
     @items = Ecm::News::Item.published.where(:locale => I18n.locale.to_s).order("published_at DESC").page(params[:page]).per(5)
   end
@@ -6,4 +8,5 @@ class Ecm::News::ItemsController < ApplicationController
   def show
     @item = Ecm::News::Item.published.where(:locale => I18n.locale.to_s).find(params[:id])
   end
+
 end

@@ -23,8 +23,8 @@ class Ecm::News::Item < ActiveRecord::Base
 
   # friendly id
   extend FriendlyId
-  friendly_id :title, :use => :slugged
-
+  #friendly_id :title, :use => :slugged
+  friendly_id :title, use: [:slugged, :finders]
   # validations
   validates :title, :presence => true, :uniqueness => true
   validates :locale, :presence  => true,
