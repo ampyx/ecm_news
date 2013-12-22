@@ -19,7 +19,8 @@ gem 'protected_attributes'
 
 # To use debugger
 # gem 'ruby-debug'
-gem truncate_html
+gem 'truncate_html'
+
 # Patched guard rails
 gem 'guard-rails',  :git => 'git://github.com/robotex82/guard-rails.git', :branch => 'better-engine-support'
 
