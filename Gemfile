@@ -9,7 +9,7 @@ gemspec
 gem "jquery-rails"
 
 gem "acts_as_markup", :github => 'zegal-cn/acts_as_markup'
-gem "acts_as_published", :path => '/home/sten/acts_as_published'
+gem "acts_as_published", :github => 'ampyx/acts_as_published'
 gem 'protected_attributes'
 
 # Declare any dependencies that are still in development here instead of in
