@@ -10,7 +10,6 @@ gem "jquery-rails"
 
 gem "acts_as_markup", :github => 'zegal-cn/acts_as_markup'
 gem "acts_as_published", :github => 'ampyx/acts_as_published'
-gem 'protected_attributes'
 
 # Declare any dependencies that are still in development here instead of in
 # your gemspec. These might include edge Rails or gems from your path or

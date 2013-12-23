@@ -10,21 +10,21 @@ class Ecm::News::Item < ActiveRecord::Base
   acts_as_published
 
   # attributes
-  attr_accessible :body,
-                  :link_to_more,
-                  :locale,
-                  :markup_language,
-                  :published_at,
-                  :slug,
-                  :title
+  #attr_accessible :body,
+  #                :link_to_more,
+  #                :locale,
+  #                :markup_language,
+  #                :published_at,
+  #                :slug,
+  #                :title
 
   # callbacks
   after_initialize :set_defaults
 
   # friendly id
   extend FriendlyId
-  #friendly_id :title, :use => :slugged
   friendly_id :title, use: [:slugged, :finders]
+
   # validations
   validates :title, :presence => true, :uniqueness => true
   validates :locale, :presence  => true,
@@ -34,7 +34,6 @@ class Ecm::News::Item < ActiveRecord::Base
                               :inclusion => Ecm::News::Configuration.markup_languages.map(&:to_s)
 
   # public methods
-
   def to_s
     title
   end

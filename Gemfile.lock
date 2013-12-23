@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/ampyx/acts_as_published.git
+  revision: 3987a77e9c5defb276fd95524316f95d5b33ae7a
+  specs:
+    acts_as_published (0.0.8.pre)
+      rails (>= 3.2.7)
+
+GIT
   remote: git://github.com/gregbell/active_admin.git
   revision: 1c895e2f5898584816e220d351a91558f883eba4
   specs:
@@ -49,12 +56,7 @@ PATH
       friendly_id
       kaminari
       rails (~> 4.0.0)
-
-PATH
-  remote: /home/sten/acts_as_published
-  specs:
-    acts_as_published (0.0.8.pre)
-      rails (>= 3.2.7)
+      truncate_html
 
 GEM
   remote: http://rubygems.org/
@@ -182,6 +184,8 @@ GEM
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
+    protected_attributes (1.0.5)
+      activemodel (>= 4.0.1, < 5.0)
     pry (0.9.12.4)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -258,6 +262,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    truncate_html (0.9.2)
     tzinfo (0.3.38)
     warden (1.2.3)
       rack (>= 1.0)
@@ -283,10 +288,12 @@ DEPENDENCIES
   guard-rails!
   guard-rspec
   jquery-rails
+  protected_attributes
   rb-inotify
   rspec-rails (~> 2.12.0)
   sass-rails
   shoulda-matchers
   sqlite3
   thin
+  truncate_html
   yard
