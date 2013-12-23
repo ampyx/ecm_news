@@ -9,15 +9,6 @@ class Ecm::News::Item < ActiveRecord::Base
   include ActsAsPublished::ActiveRecord
   acts_as_published
 
-  # attributes
-  #attr_accessible :body,
-  #                :link_to_more,
-  #                :locale,
-  #                :markup_language,
-  #                :published_at,
-  #                :slug,
-  #                :title
-
   # callbacks
   after_initialize :set_defaults
 

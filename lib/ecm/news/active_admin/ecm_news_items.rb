@@ -13,6 +13,9 @@ include ActsAsPublished::ActiveAdminHelper
   scope :all
   scope :published
   scope :unpublished
+  
+  # Permit parameters
+  permit_params :body, :link_to_more, :locale, :markup_language, :published_at, :slug, :title
 
   form do |f|
     f.inputs do
